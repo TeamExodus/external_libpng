@@ -1920,6 +1920,11 @@ PNG_INTERNAL_FUNCTION(void, png_init_filter_functions_neon,
 PNG_INTERNAL_FUNCTION(png_uint_32, png_check_keyword, (png_structrp png_ptr,
    png_const_charp key, png_bytep new_key), PNG_EMPTY);
 
+PNG_INTERNAL_FUNCTION(void, png_seek_data, (png_structp png_ptr,
+    png_uint_32 length), PNG_EMPTY);
+PNG_INTERNAL_FUNCTION(int, png_opt_crc_finish,(png_structrp png_ptr,
+    png_uint_32 skip), PNG_EMPTY);
+
 /* Maintainer: Put new private prototypes here ^ */
 
 #include "pngdebug.h"
